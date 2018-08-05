@@ -4,7 +4,7 @@ namespace AppMate.ViewModels
     using AppMate.Models;
     using AppMate.View;
     using GalaSoft.MvvmLight.Command;
-    using Moneda.Services;
+    using AppMate.Services;
     using System.Collections.Generic;
     using System.Windows.Input;
     using Xamarin.Forms;
@@ -97,9 +97,9 @@ namespace AppMate.ViewModels
             this.IsRunnig = false;
             this.IsEnable = true;
 
-            this.Codigo = string.Empty;
+           // this.Codigo = string.Empty;
 
-            MainViewModel.GetInstance().Preguntas = new PreguntasViewModel();
+            MainViewModel.GetInstance().Preguntas = new PreguntasViewModel(this.Codigo);
             await Application.Current.MainPage.Navigation.PushModalAsync(new Preguntas());
 
         }
@@ -144,6 +144,7 @@ namespace AppMate.ViewModels
             //}
             //this.IsRunnig = false;
             //this.IsEnable = true;
+
 
             //this.Codigo = string.Empty;
 

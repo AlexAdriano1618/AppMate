@@ -11,7 +11,7 @@
                 Padding="5">
                 <Image
                         Source="logoapp"
-                        WidthRequest="100">
+                        >
                 </Image>
                 <Grid
                     Margin="10,0"
@@ -38,7 +38,7 @@
                  Orientation="Horizontal"
                  VerticalOptions="CenterAndExpand">
                     <Button
-                        BackgroundColor="Navy"
+                        BackgroundColor="Green"
                         BorderRadius="23"
                         Command="{Binding InicioCommand}"
                         HeightRequest="46"

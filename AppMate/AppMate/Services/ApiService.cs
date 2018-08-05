@@ -1,4 +1,4 @@
-﻿namespace Moneda.Services
+﻿namespace AppMate.Services
 {
     using System;
     using System.Collections.Generic;

@@ -14,6 +14,11 @@ namespace AppMate.ViewModels
             get;
             set;
         }
+        public List<Pregunta> ListaPreguntas
+        {
+            get;
+            set;
+        }
         public InicioViewModel Inicio
         {
             get;
